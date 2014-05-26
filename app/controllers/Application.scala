@@ -27,11 +27,6 @@ object Application extends Controller {
       Redirect("/")
     },
       mailData => {
-        /*val mail = use[MailerPlugin].email
-            mail.setSubject("Email sent using Scala")
-            mail.addRecipient(mailData.email)
-            mail.addFrom(mailData.email)
-            mail.send("Hello World")*/
         Future {sendEmail(mailData.email)}
             Redirect("/")
       })
