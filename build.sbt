@@ -1,4 +1,4 @@
-name := "mailSendingApp"
+name := "non-blocking_EmailSendingApp"
 
 version := "1.0-SNAPSHOT"
 
